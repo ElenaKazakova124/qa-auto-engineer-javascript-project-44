@@ -11,6 +11,10 @@
     "type": "git",
     "url": "git+https://github.com/ElenaKazakova124/qa-auto-engineer-javascript-project-44.git"
   },
+  "bin": {
+  "brain-games": "bin/brain-games.js",
+  "brain-even": "bin/brain-even.js"
+},
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -19,5 +23,14 @@
   "homepage": "https://github.com/ElenaKazakova124/qa-auto-engineer-javascript-project-44#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.0.0"
   }
 }
