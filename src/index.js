@@ -1,29 +1,27 @@
 import readlineSync from 'readline-sync';
-import correctAnswer from './games/even';
-import description from './games/even';
 
-const countRound = 3;
+const runGame = (gameDescription, generateRound) => {
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
+  console.log(gameDescription);
 
-export default () => {
-   console.log('Welcome to the Brain Games!');
+  const roundsCount = 3;
 
-   const name = readlineSync.question('May I have your name? ');
-   console.log(`Hello, ${name}!`);
+  for (let i = 0; i < roundsCount; i += 1) {
+    const [question, correctAnswer] = generateRound();
+    console.log(`Question: ${question}`);
+    const userAnswer = readlineSync.question('Your answer: ').toLowerCase().trim();
 
-   console.log(`${description}`);
-
-   for (let i = 0; i < countRound; i++)
-   console.log('Question: ');
-
-   const userAnswer  = readlineSync.question('Your answer: ');
-
-   if (userAnswer === correctAnswer) {
+    if (userAnswer !== correctAnswer) {
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+      console.log(`Let's try again, ${userName}!`);
+      return;
+    }
     console.log('Correct!');
-   } else {
-    console.log(userAnswer + 'is wrong answer ;(. Correct answer was' + correctAnswer);
-    console.log(`Let's try again, ${name}!`)
-    return;
-   }
+  }
 
-   console.log(`Congratulations, ${name}!`);
-}
+  console.log(`Congratulations, ${userName}!`);
+};
+
+export default runGame;

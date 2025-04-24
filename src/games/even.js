@@ -1,17 +1,14 @@
-/* eslint-disable no-unused-vars */
 import runGame from '../index.js';
-import { getRamdomNumber } from '../helper.js';
+import { getRandomNumber } from '../helper.js';
 
-const isEven = (num) => num % 2 === 0; // true or false
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const description = 'Answer "yes" if the number is even, otherwise answer "no"'
+const isEven = (number) => number % 2 === 0;
 
-const getQuestionAndAnswer = () => {
- const question = getRamdomNumber (1, 9);
- const correctAnswer = isEven(question) ? 'yes' : 'no';
- return [question, correctAnswer, description]
-}
+const generateRound = () => {
+  const question = getRandomNumber(1, 100);
+  const correctAnswer = isEven(question) ? 'yes' : 'no';
+  return [question.toString(), correctAnswer];
+};
 
-export default () => {
-    runGame()
-}
+export default () => runGame(description, generateRound);

@@ -4,6 +4,10 @@
   "description": "[![Actions Status](https://github.com/ElenaKazakova124/qa-auto-engineer-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ElenaKazakova124/qa-auto-engineer-javascript-project-44/actions)",
   "main": "index.js",
   "type": "module",
+  "bin": {
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,10 +15,6 @@
     "type": "git",
     "url": "git+https://github.com/ElenaKazakova124/qa-auto-engineer-javascript-project-44.git"
   },
-  "bin": {
-  "brain-games": "bin/brain-games.js",
-  "brain-even": "bin/brain-even.js"
-},
   "author": "",
   "license": "ISC",
   "bugs": {
