@@ -2,3 +2,13 @@
 [![Actions Status](https://github.com/ElenaKazakova124/qa-auto-engineer-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ElenaKazakova124/qa-auto-engineer-javascript-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/2c1249f50be201dc3814/maintainability)](https://codeclimate.com/github/ElenaKazakova124/qa-auto-engineer-javascript-project-44/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/2c1249f50be201dc3814/test_coverage)](https://codeclimate.com/github/ElenaKazakova124/qa-auto-engineer-javascript-project-44/test_coverage)
+
+Игра: "Проверка на чётность"   https://asciinema.org/connect/bb747cad-e701-41b3-b8f6-767159bb49f3
+
+Игра: "Калькулятор"
+
+Игра "НОД"
+
+Игра "Арифметическая прогрессия"
+
+Игра "Простое ли число?"
