@@ -1,12 +1,15 @@
-// eslint.config.js
-import js from '@eslint/js';
+import js from '@eslint/js'
+import stylistic from '@stylistic/eslint-plugin'
 
 export default [
   js.configs.recommended,
   {
+    plugins: {
+      '@stylistic': stylistic
+    },
     rules: {
-      'no-unused-vars': 'warn',
-      'no-console': 'off'
+      '@stylistic/semi': ['error', 'never'],
+      '@stylistic/eol-last': ['error', 'always']
     }
   }
-];
+]
