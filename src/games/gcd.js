@@ -11,6 +11,5 @@ const generateRound = () => {
   const correctAnswer = gcd (first_number, second_number)
   return [question.toString(), correctAnswer.toString()]
 }
-    
-  
+
 export default () => runGame(description, generateRound)

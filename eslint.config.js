@@ -24,6 +24,13 @@ export default [
       '@stylistic/eol-last': ['error', 'always'],
       '@stylistic/comma-dangle': ['error', 'always-multiline'],
       '@stylistic/indent': ['error', 2],
+
+      '@stylistic/no-trailing-spaces': 'error',
+      '@stylistic/no-multiple-empty-lines': ['error', { max: 1 }],
+      '@stylistic/arrow-parens': ['error', 'as-needed'],
+      '@stylistic/space-before-function-paren': ['error', 'never'],
+      '@stylistic/space-infix-ops': 'error',
+
       'no-console': 'off',
     },
   },

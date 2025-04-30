@@ -13,6 +13,5 @@ const generateRound = () => {
   const correctAnswer = newProgression.hiddenNumber
   return [question.toString(), correctAnswer.toString(), startLimit, stepLimit, lenghtLimit]
 }
-    
-  
+
 export default () => runGame(description, generateRound)

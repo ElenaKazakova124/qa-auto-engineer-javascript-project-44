@@ -10,7 +10,7 @@ export const getRandomOperator = () => {
   }
 }
 
-export const gcd = function NOD (first_number, second_number) {
+export const gcd = function NOD(first_number, second_number) {
   if (second_number > first_number) return NOD(second_number, first_number)
   if (!second_number) return first_number
   return NOD(second_number, first_number % second_number)
@@ -26,13 +26,13 @@ export const progression = function generateProgression(startLimit, stepLimit, l
   const progressionWithHidden = [...progression]
   progressionWithHidden[hiddenIndex] = '..'
   return {
-    progression: progressionWithHidden.join(' '), 
+    progression: progressionWithHidden.join(' '),
     hiddenNumber,
     hiddenIndex,
   }
 }
 
-export const prime =function isPrime(number) {
+export const prime = function isPrime(number) {
   if (number <= 1) return false
   for (let i = 2; i <= Math.sqrt(number); i++) {
     if (number % i === 0) return false

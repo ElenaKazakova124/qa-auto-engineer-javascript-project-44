@@ -9,7 +9,7 @@ const generateRound = () => {
   const digit_second = getRandomNumber(1, 100)
   const operator = getRandomOperator()
   const question = `${digit_first} ${operator} ${digit_second}`
-  
+
   const correctAnswer = eval(question)
   return [question, correctAnswer.toString()]
 }
