@@ -11,7 +11,7 @@ const generateRound = () => {
   const question = `${digit_first} ${operator} ${digit_second}`;
   
   const correctAnswer = eval(question);
-  return [question.toString(), correctAnswer.toString()];
+  return [question, correctAnswer.toString()];
 };
 
 export default () => runGame(description, generateRound);
