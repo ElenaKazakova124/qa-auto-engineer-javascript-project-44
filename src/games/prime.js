@@ -12,4 +12,3 @@ const generateRound = () => {
 }
 
 export default () => runGame(description, generateRound)
-
