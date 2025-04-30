@@ -1,3 +1,6 @@
+calc_game
+even_game
+gcd_game
+prime_game
 node_modules/
-.vscode/
-.DS_Store
+.DS_store
